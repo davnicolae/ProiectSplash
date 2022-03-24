@@ -1,0 +1,73 @@
+.my-container {
+  max-width: $container;
+  margin: 0 auto;
+  & h2 {
+    text-align: center;
+  }
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-gap: 3rem;
+
+  & .grid-item:last-child::after {
+    position: absolute;
+    content: 'new';
+    text-transform: uppercase;
+    color: #c0392b;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #d2edff;
+  border-radius: 10px;
+  padding: 2rem;
+  justify-content: center;
+  text-align: center;
+  line-height: 2.2rem;
+  row-gap: 2rem;
+  position: relative;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+}
+
+////////////////////////////////////
+// laptop si tableta
+@media (max-width: $laptop-max) {
+  .my-container {
+    max-width: 104rem;
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .my-container {
+    max-width: 89rem;
+  }
+}
+
+/////////////////////////////
+//pentru 768px ( ca in design)
+@media (max-width: $phone-max) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    & p {
+      max-width: 43rem;
+      text-align: center;
+    }
+  }
+}

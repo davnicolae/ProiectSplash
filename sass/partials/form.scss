@@ -1,0 +1,35 @@
+.ceva {
+  max-width: 64rem;
+  margin: 0 auto;
+  border: 1px solid $tertiary-text-color;
+  padding: 4rem;
+  position: relative;
+  & h2 {
+    color: $tertiary-text-color;
+    margin-bottom: 4rem;
+  }
+  & input[type='text']:last-of-type {
+    height: 13.6rem;
+  }
+  & .down-btn:link {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.flex-btn {
+  display: flex;
+  justify-items: end;
+}
+
+/////////////////////////////
+//pentru 768px ( ca in design)
+@media (max-width: $phone-max) {
+  .ceva {
+    max-width: unset;
+    padding: 2rem;
+    & h2 {
+      margin-bottom: 6rem;
+    }
+  }
+}

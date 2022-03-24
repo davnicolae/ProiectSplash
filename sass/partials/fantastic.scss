@@ -1,0 +1,21 @@
+.cards {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fantastic-team {
+  display: flex;
+  flex-direction: column;
+  max-width: 27rem;
+  // min-width: 27rem;
+  text-align: center;
+}
+
+.card-img {
+  & img {
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+}

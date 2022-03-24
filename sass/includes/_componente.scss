@@ -1,0 +1,80 @@
+// nav buton
+
+%btn-placeholder {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 0.7rem 2.4rem 0.8rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+// margin bottom reutilizabil
+.mg-bt-medium {
+  margin-bottom: 5rem;
+}
+
+.mg-bt-light {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  &:link,
+  &:visited {
+    @extend %btn-placeholder;
+  }
+  &.btn--full {
+    &:link,
+    &:visited {
+      background-color: $light-green;
+      color: #fff;
+    }
+    &:hover,
+    &:active {
+      background-color: darken($light-green, 10%);
+    }
+  }
+
+  &.down-btn {
+    &:link,
+    &:visited {
+      background-color: $blue;
+      color: #fff;
+      margin-right: 2rem;
+      
+      &:nth-child(2){
+        margin-right: 0;
+
+      }
+    }
+    &:active,
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/assets/img/parallax.jpeg");
+  // width: 100vh;
+  height: 40rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// // mobile
+// @media (max-width: $phone-max) {
+//   .parallax {
+//     height: 20rem%;
+//   }
+// }
+

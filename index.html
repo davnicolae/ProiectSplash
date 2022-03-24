@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Codezilla internship - project 1</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      rel="stylesheet"
+    />
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+  ></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- nav si logo -->
+    <header class="header">
+      <a href="#">
+        <img src="assets/img/logo-splash.png" alt="Splash logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list ">
+          <li><a class="main-nav-link" href="">About</a></li>
+          <li><a class="main-nav-link" href="">Jobs</a></li>
+          <li><a class="main-nav-link" href="">Cities</a></li>
+          <li><a class="main-nav-link" href="">Charging</a></li>
+          <li><a class="main-nav-link btn btn--full" href="#">Ride me </a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <header class="mg-bt-medium">
+        <div class="hero">
+          <div class="hero-content">
+            <h1>Welcome to our amazing website</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Download section -->
+      <section class="mg-bt-medium">
+        <div class="down-container">
+          <div>
+            <h2>Bored to stay in traffic</h2>
+          </div>
+          <div>
+            <p class="mg-bt-light">Download the app</p>
+          </div>
+          <div>
+            <a href="#" class="btn down-btn">Download 2</a>
+            <a href="#" class="btn down-btn">Download 1</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- First paragraf -->
+      <!-- primul, al doilea paragraf si seo sunt unite in partials (mainParagraf) -->
+      <section class="mg-bt-medium">
+        <div class="flex">
+          <div class="img">
+            <img src="/assets/img/trotineta.png" alt="trei trotinete splash" />
+          </div>
+
+          <div class="first-par">
+            <h2>Nice scooters, right?</h2>
+            <p>
+              Maecenas eget feugiat augue. Nulla faucibus vitae urna sit amet
+              efficitur. Praesent justo mauris, facilisis eu magna et, varius
+              lobortis ex. Nunc ultrices ipsum at tincidunt suscipit. Maecenas
+              id justo at quam faucibus euismod. Proin eu urna blandit, pharetra
+              enim scelerisque, malesuada justo. Sed commodo velit id augue
+              lacinia, quis dignissim urna consectetur. Vestibulum et arcu vitae
+              diam ultricies tempor. Praesent in posuere ante. Aenean dui mi,
+              imperdiet id placerat quis, fringilla et neque. Suspendisse porta
+              justo odio, ut aliquet felis volutpat sit amet. Nunc fermentum vel
+              dui ac sodales. Vivamus consectetur tortor at mauris vulputate
+              finibus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEO section -->
+      <section class="mg-bt-medium">
+        <div class="seo-section">
+          <h2>Some boring text, good for SEO</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
+            eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
+            efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit
+            amet tempus commodo. Phasellus nec libero laoreet, finibus libero
+            rhoncus, pellentesque elit. Mauris facilisis commodo justo, eget
+            venenatis erat suscipit nec.
+          </p>
+          <p class="mg-bt-light">
+            Maecenas eget feugiat augue. Nulla faucibus vitae urna sit amet
+            efficitur. <strong>Praesent</strong> justo mauris, facilisis eu
+            magna et, varius lobortis ex. Nunc ultrices ipsum at tincidunt
+            suscipit. Maecenas id justo at quam faucibus euismod. Proin eu urna
+            blandit, pharetra enim scelerisque, malesuada justo. Sed commodo
+            velit id augue lacinia, quis dignissim urna consectetur. Vestibulum
+            et arcu vitae diam ultricies tempor. Praesent in posuere ante.
+            Aenean dui mi, imperdiet id placerat quis, <em>fringilla</em> et n
+            eque. Suspendisse porta justo odio, ut aliquet felis volutpat sit
+            amet. Nunc fermentum vel dui ac sodales. Vivamus consectetur tortor
+            at mauris vulputate finibus.
+          </p>
+          <a href="#" class="btn btn--full">Do something</a>
+        </div>
+      </section>
+
+      <!-- Second paragraf -->
+      <section class="mg-bt-medium">
+        <div class="flex flex--reverse">
+          <div class="img">
+            <img src="/assets/img/trotineta.png" alt="trei trotinete splash" />
+          </div>
+
+          <div class="first-par">
+            <h2>Still nice, right?</h2>
+            <p>
+              Maecenas eget feugiat augue. Nulla faucibus vitae urna sit amet
+              efficitur. Praesent justo mauris, facilisis eu magna et, varius
+              lobortis ex. Nunc ultrices ipsum at tincidunt suscipit. Maecenas
+              id justo at quam faucibus euismod. Proin eu urna blandit, pharetra
+              enim scelerisque, malesuada justo. Sed commodo velit id augue
+              lacinia, quis dignissim urna consectetur. Vestibulum et arcu vitae
+              diam ultricies tempor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- main features -->
+      <section class="mg-bt-medium">
+        <div class="my-container">
+          <div class="mg-bt-medium">
+            <h2>Our main features</h2>
+          </div>
+
+          <div class="features-grid">
+            <div class="grid-item">
+              <div class="logos">
+                <img
+                  class="logos-img"
+                  src="assets/img/logo.svg"
+                  alt="splash logo"
+                />
+              </div>
+              <div class="logos">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  consectetur aliquam urna. Pellentesque et ullamcorper ipsum.
+                  Morbi eget hendrerit purus, in tempor lectus.
+                </p>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="logos">
+                <img
+                  class="logos-img"
+                  src="assets/img/logo.svg"
+                  alt="splash logo"
+                />
+              </div>
+              <div class="logos">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="logos">
+                <img
+                  class="logos-img"
+                  src="assets/img/logo.svg"
+                  alt="splash logo"
+                />
+              </div>
+              <div class="logos">
+                <p>Morbi consectetur aliquam urna.</p>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="logos">
+                <img
+                  class="logos-img"
+                  src="assets/img/logo.svg"
+                  alt="splash logo"
+                />
+              </div>
+              <div class="logos">
+                <p>Morbi consectetur aliquam urna.</p>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="logos">
+                <img
+                  class="logos-img"
+                  src="assets/img/logo.svg"
+                  alt="splash logo"
+                />
+              </div>
+              <div class="logos">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  consectetur aliquam urna. Pellentesque et ullamcorper ipsum.
+                  Morbi eget hendrerit purus, in tempor lectus. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit. Morbi consectetur
+                  aliquam urna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Parallax Scrolling Effect (_componente) -->
+      <section class="mg-bt-medium">
+        <div class="parallax"></div>
+      </section>
+
+      <!-- Also seo section ( in mainFeatures) -->
+      <section class="mg-bt-medium">
+        <div class="seo-section">
+          <h2>
+            Some more boring text, <br />
+            also good for SEO
+          </h2>
+          <p class="mg-bt-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            consectetur aliquam urna. Pellentesque et ullamcorper ipsum. Morbi
+            eget hendrerit purus, in tempor lectus. Curabitur lorem magna,
+            efficitur et molestie ut, rutrum in nisi. Sed lobortis sapien sit
+            amet tempus commodo. Phasellus nec libero laoreet, finibus libero
+            rhoncus, pellentesque elit. Mauris facilisis commodo justo, eget
+            venenatis erat suscipit nec.
+          </p>
+          <a href="#" class="btn btn--full">DO IT</a>
+        </div>
+      </section>
+
+      <!-- fantastic section -->
+      <section class="mg-bt-medium">
+        <div class="my-container">
+          <div class="mg-bt-medium">
+            <h2>Our main features</h2>
+          </div>
+
+          <!-- flex card -->
+          <div class="cards">
+            <div class="fantastic-team">
+              <div class="card-img">
+                <img src="/assets/img/team1.png" alt="" />
+              </div>
+              <div>
+                <h3>Ion Popescu</h3>
+                <h4>the fixer</h4>
+                <p>
+                  He likes to lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Morbi consectetur aliquam urna. Pellentesque et
+                  ullamcorper ipsum et ullamcorper ipsum.
+                </p>
+              </div>
+            </div>
+
+            <div class="fantastic-team">
+              <div class="card-img">
+                <img src="/assets/img/team2.png" alt="" />
+              </div>
+              <div>
+                <h3>Andreea Ghica</h3>
+                <h4>the colourful</h4>
+                <p>
+                  She likes to lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Morbi consectetur aliquam urna. Pellentesque
+                  et ullamcorper ipsum.
+                </p>
+              </div>
+            </div>
+
+            <div class="fantastic-team">
+              <div class="card-img">
+                <img src="/assets/img/team1.png" alt="" />
+              </div>
+              <div>
+                <h3>Alexandru Ioanovici Cuza</h3>
+                <h4>the guy who owns the company</h4>
+                <p>
+                  He likes to lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Morbi consectetur aliquam urna. Pellentesque et
+                  ullamcorper ipsum.
+                </p>
+              </div>
+            </div>
+            <div class="fantastic-team">
+              <div class="card-img">
+                <img src="/assets/img/team1.png" alt="" />
+              </div>
+              <div>
+                <h3>Gruia</h3>
+                <h4>the entertainer</h4>
+                <p>He likes to entertain.</p>
+              </div>
+            </div>
+
+            <div class="fantastic-team">
+              <div class="card-img">
+                <img src="/assets/img/team2.png" alt="" />
+              </div>
+              <div>
+                <h3>Roxana</h3>
+                <h4>HR</h4>
+                <p>
+                  She likes to lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Morbi consectetur aliquam urna. Pellentesque
+                  et ullamcorper ipsum et ullamcorper ipsum.
+                </p>
+              </div>
+            </div>
+            <div class="fantastic-team">
+              <div class="card-img">
+                <img src="/assets/img/team2.png" alt="" />
+              </div>
+              <div>
+                <h3>Mihaela Acatrinei</h3>
+                <h4>the coffee addict</h4>
+                <!-- <p> </p> -->
+              </div>
+            </div>
+            <div class="fantastic-team">
+              <div class="card-img">
+                <img src="/assets/img/team1.png" alt="" />
+              </div>
+              <div>
+                <h3>Alexandru Ioanovici Cuza</h3>
+                <h4>the IT guy</h4>
+                <p>He likes to kick the keyboard.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section form -->
+      <section class="mg-bt-medium">
+        <div class="my-container">
+          <div class="ceva">
+            <form action="">
+              <h2>What about you?</h2>
+              <div>
+                <label for="">Full name</label>
+                <input type="text" />
+                <label for="">Preffered fruit</label>
+                <input type="text" />
+                <label for="">How can we help you?</label>
+                <input type="text" />
+              </div>
+
+              <div class="flex-btn">
+                <a href="#" class="btn down-btn">Submit</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="my-container">
+          <div class="grid-footer">
+            <div class="footer-component first-footer">
+              <h3>Some headline</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                consectetur aliquam urna. Lorem ipsum dolor sit amet, adipiscing
+                elit. Morbi consectetur aliquam urna.
+              </p>
+            </div>
+            <div class="footer-component second-footer">
+              <h3>Other links</h3>
+              <ul>
+                <li>Coffee</li>
+                <li>TeaWater</li>
+                <li>Juice</li>
+                <li>Beer</li>
+                <li>Wine</li>
+              </ul>
+            </div>
+            <div class="footer-component tertiary-footer">
+              <img src="/assets/img/logo-splash-2X.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="my-container">
+          <p>Copyright 2022 Codezilla</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
