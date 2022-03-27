@@ -1,4 +1,4 @@
-.ceva {
+.form {
   max-width: 64rem;
   margin: 0 auto;
   border: 1px solid $tertiary-text-color;
@@ -20,16 +20,24 @@
 .flex-btn {
   display: flex;
   justify-items: end;
+  & .btn.down-btn{
+    width: 11.4rem;
+  }
 }
 
 /////////////////////////////
 //pentru 768px ( ca in design)
 @media (max-width: $phone-max) {
-  .ceva {
+  .form {
     max-width: unset;
     padding: 2rem;
     & h2 {
       margin-bottom: 6rem;
+    }
+  }
+  .flex-btn {
+    & .btn.down-btn{
+      width: 10.7rem;
     }
   }
 }

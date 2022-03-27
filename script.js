@@ -11,29 +11,36 @@ $(document).ready(function () {
 ///////////////////////////////////////////////////////////
 // Sticky navigation
 
-const sectionHeroEl = document.querySelector(".hero");
+// const sectionHeroEl = document.querySelector(".hero");
 
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
+// const obs = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     console.log(ent);
 
-    if (ent.isIntersecting === false) {
-      document.body.classList.add("sticky");
-    }
+//     if (ent.isIntersecting === false) {
+//       document.body.classList.add("sticky");
+//     }
 
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "-80px",
-  }
-);
-obs.observe(sectionHeroEl);
+//     if (ent.isIntersecting === true) {
+//       document.body.classList.remove("sticky");
+//     }
+//   },
+//   {
+//     // In the viewport
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "-80px",
+//   }
+// );
+
+$(window).scroll(function(){
+            if($(this).scrollTop() > 0){
+                $('.header').addClass('sticky')
+            } else{
+                $('.header').removeClass('sticky')
+            }
+        });
 
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
