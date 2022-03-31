@@ -7,7 +7,6 @@
   align-items: center;
 }
 
-
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -21,7 +20,7 @@
   color: #333;
   font-weight: 500;
   font-size: 1.8rem;
-  &.btn--full{
+  &.btn--full {
     width: 12rem;
   }
 }
@@ -40,7 +39,7 @@
   & img {
     transform: scale(0.65);
   }
-  transition: all 0.3s ;
+  transition: all 0.3s;
 }
 .btn-mobile-nav {
   border: none;
@@ -72,6 +71,40 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero--2 {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.52),
+      rgba(20, 18, 20, 0.73)
+    ),
+    url('/assets/img/back2.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero--3 {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.52),
+      rgba(20, 18, 20, 0.73)
+    ),
+    url('/assets/img/header_desktop.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $green;
+}
+.slick-dots {
+  bottom: 1.5rem;
+}
+.slick-dots li button:before {
+  font-size: 1.6rem;
+  color: #c4c4c4;
+  opacity: unset;
+  &:hover {
+    color: $green;
+  }
+}
+
 
 .hero-content {
   display: flex;
@@ -90,7 +123,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  & div:nth-child(3){
+  & div:nth-child(3) {
     display: flex;
     gap: 2rem;
   }
@@ -207,8 +240,6 @@
   .btn:visited {
     font-size: 1.6rem;
   }
-
-
 
   .hero-content {
     max-height: 34rem;

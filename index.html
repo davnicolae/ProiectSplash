@@ -35,7 +35,9 @@
     <!-- nav si logo -->
     <header class="header">
       <a href="#">
-        <div style="height: 4rem;"><img src="assets/img/logo-splash.png" alt="Splash logo" /></div>
+        <div style="height: 4rem">
+          <img src="assets/img/logo-splash.png" alt="Splash logo" />
+        </div>
       </a>
 
       <nav class="main-nav">
@@ -56,8 +58,25 @@
 
     <main>
       <!-- hero section -->
-      <header class="mg-bt-medium">
+      <header class="mg-bt-medium your-class">
         <div class="hero">
+          <div class="hero-content">
+            <h1>Welcome to our amazing website</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <div class="hero--2">
+          <div class="hero-content">
+            <h1>Enjoy the most colourful rides with us</h1>
+            <p>
+              Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor,<br />
+              sit amet ipsum dolor sit amet ipsum dolor sit amet
+            </p>
+          </div>
+        </div>
+
+        <div class="hero--3">
           <div class="hero-content">
             <h1>Welcome to our amazing website</h1>
             <p>Lorem ipsum dolor sit amet</p>
@@ -134,7 +153,66 @@
             amet. Nunc fermentum vel dui ac sodales. Vivamus consectetur tortor
             at mauris vulputate finibus.
           </p>
-          <a href="#" class="btn btn--full btn--seo-1">Do something</a>
+
+          <a href="#modal" class="btn btn--full btn--seo-1 modal-toggle"
+            >Do something</a
+          >
+
+          <div class="modal" id="modal">
+            <div class="modal-overlay modal-toggle"></div>
+            <div class="modal-wrapper modal-transition">
+              <div class="modal-body">
+                <div class="modal-content">
+                  <button class="modal-close modal-toggle">
+                    <svg class="icon-close icon" viewBox="0 0 32 32">
+                      <use xlink:href="#icon-close"></use>
+                    </svg>
+
+                    <ion-icon class="icon-mobile-nav" ></ion-icon>
+                  </button>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi consectetur aliquam urna. Pellentesque et ullamcorper
+                    ipsum. Morbi eget hendrerit purus, in tempor lectus.
+                    Curabitur lorem magna, efficitur et molestie ut, rutrum in
+                    nisi. Sed lobortis sapien sit amet tempus commodo. Phasellus
+                    nec libero laoreet, finibus libero rhoncus, pellentesque
+                    elit. Mauris facilisis commodo justo, eget venenatis erat
+                    suscipit nec. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Morbi consectetur aliquam urna.
+                    Pellentesque et ullamcorper ipsum. Morbi eget hendrerit
+                    purus, in tempor lectus. Curabitur lorem magna, efficitur et
+                    molestie ut, rutrum in nisi. Sed lobortis sapien sit amet
+                    tempus commodo. Phasellus nec libero laoreet, finibus libero
+                    rhoncus, pellentesque elit. Mauris facilisis commodo justo,
+                    eget venenatis erat suscipit nec. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Morbi consectetur aliquam
+                    urna. Pellentesque et ullamcorper ipsum. Morbi eget
+                    hendrerit purus, in tempor lectus. Curabitur lorem magna,
+                    efficitur et molestie ut, rutrum in nisi. Sed lobortis
+                    sapien sit amet tempus commodo. Phasellus nec libero
+                    laoreet, finibus libero rhoncus.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi consectetur aliquam urna. Pellentesque et ullamcorper
+                    ipsum. Morbi eget hendrerit purus, in tempor lectus.
+                    Curabitur lorem magna, efficitur et molestie ut, rutrum in
+                    nisi. Sed lobortis sapien sit amet tempus commodo. Phasellus
+                    nec libero laoreet, finibus libero rhoncus, pellentesque
+                    elit. Mauris facilisis commodo justo, eget venenatis erat
+                    suscipit nec. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Morbi consectetur aliquam urna.
+                    Pellentesque et ullamcorper ipsum. Morbi eget hendrerit
+                    purus, in tempor lectus. Curabitur lorem magna, efficitur et
+                    molestie ut, rutrum in nisi. Sed lobortis sapien sit amet
+                    tempus commodo. Phasellus nec libero laoreet, finibus libero
+                    rhoncus, pellentesque elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
