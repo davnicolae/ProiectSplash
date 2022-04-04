@@ -1,46 +1,22 @@
-$(document).ready(function () {
-  $('.thing').slick({
-    dots: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 90) {
+    $(".header").addClass("sticky");
+  } else {
+    $(".header").removeClass("sticky");
+  }
 });
 
+// var yourNavigation = $(".nav");
+//     stickyDiv = "sticky";
+//     yourHeader = $('.header').height();
 
-///////////////////////////////////////////////////////////
-// Sticky navigation
-
-// const sectionHeroEl = document.querySelector(".hero");
-
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     console.log(ent);
-
-//     if (ent.isIntersecting === false) {
-//       document.body.classList.add("sticky");
-//     }
-
-//     if (ent.isIntersecting === true) {
-//       document.body.classList.remove("sticky");
-//     }
-//   },
-//   {
-//     // In the viewport
-//     root: null,
-//     threshold: 0,
-//     rootMargin: "-80px",
+// $(window).scroll(function() {
+//   if( $(this).scrollTop() > yourHeader ) {
+//     yourNavigation.addClass(stickyDiv);
+//   } else {
+//     yourNavigation.removeClass(stickyDiv);
 //   }
-// );
-
-$(window).scroll(function(){
-            if($(this).scrollTop() > 0){
-                $('.header').addClass('sticky')
-            } else{
-                $('.header').removeClass('sticky')
-            }
-        });
+// });
 
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
@@ -52,12 +28,8 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-
-
-
-
 //slick
-$('.your-class').slick({
+$(".your-class").slick({
   dots: true,
   infinite: true,
   speed: 300,
@@ -65,10 +37,8 @@ $('.your-class').slick({
   adaptiveHeight: true,
 });
 
-
-
 // Quick & dirty toggle to demonstrate modal toggle behavior
-$('.modal-toggle').on('click', function(e) {
+$(".modal-toggle").on("click", function (e) {
   e.preventDefault();
-  $('.modal').toggleClass('is-visible');
+  $(".modal").toggleClass("is-visible");
 });
