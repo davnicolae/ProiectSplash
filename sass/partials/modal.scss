@@ -1,22 +1,19 @@
-
 /* 1. Ensure this sits above everything when visible */
 
-// .ceva{
-//  position: relative;
-// }
-
-.modal {
-    position: absolute;
-    z-index: 10000; /* 1 */
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    width: 100%;
-    height: 100%;
+.modal,
+.modal-2 {
+  position: absolute;
+  z-index: 10000; /* 1 */
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-.modal.is-visible {
-    visibility: visible;
+.modal.is-visible,
+.modal-2.is-visible {
+  visibility: visible;
 }
 
 .modal-overlay {
@@ -32,7 +29,8 @@
   transition: visibility 0s linear 0.3s, opacity 0.3s;
 }
 
-.modal.is-visible .modal-overlay {
+.modal.is-visible .modal-overlay,
+.modal-2.is-visible .modal-overlay {
   opacity: 1;
   visibility: visible;
   transition-delay: 0s;
@@ -47,6 +45,9 @@
   width: 1000px;
   background-color: #fff;
   box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+  &.second {
+    top: 2.5rem;
+  }
 }
 
 .modal-transition {
@@ -55,30 +56,34 @@
   opacity: 0;
 }
 
-.modal.is-visible .modal-transition {
+.modal.is-visible .modal-transition,
+.modal-2.is-visible .modal-transition {
   transform: translateY(0);
   opacity: 1;
 }
 
 .modal-content {
   padding: 30px;
-  font-size:16px;
-  
+  font-size: 16px;
 }
 
 .modal-header {
   position: relative;
-  // background-color: #fff;
-  // box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
-  // border-bottom: 1px solid #e8e8e8;
+}
+
+.icon-modal {
+  color: $orange;
+  font-size: 3rem;
+}
+.icon-modal:hover {
+  color: darken($orange, 5%);
 }
 
 .modal-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1rem;
+  right: -1rem;
   padding: 1em;
-  color: #aaa;
   background: none;
   border: 0;
 }
@@ -87,12 +92,28 @@
   color: #777;
 }
 
-
-
 .modal-content > *:first-child {
   margin-top: 0;
 }
 
 .modal-content > *:last-child {
   margin-bottom: 0;
+}
+
+/////////////////////////////////
+// pentru 768px ( ca in design)
+@media (max-width: $phone-max) {
+  .modal-wrapper {
+    width: 73.8rem;
+    top: -16rem;
+    left: 0;
+    &.second {
+      top: -10rem;
+    }
+  }
+
+  .modal-content {
+    padding: 2rem;
+    text-align: left;
+  }
 }

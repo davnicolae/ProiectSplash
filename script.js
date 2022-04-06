@@ -6,17 +6,7 @@ $(window).scroll(function () {
   }
 });
 
-// var yourNavigation = $(".nav");
-//     stickyDiv = "sticky";
-//     yourHeader = $('.header').height();
 
-// $(window).scroll(function() {
-//   if( $(this).scrollTop() > yourHeader ) {
-//     yourNavigation.addClass(stickyDiv);
-//   } else {
-//     yourNavigation.removeClass(stickyDiv);
-//   }
-// });
 
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
@@ -41,6 +31,11 @@ $(".your-class").slick({
 $(".modal-toggle").on("click", function (e) {
   e.preventDefault();
   $(".modal").toggleClass("is-visible");
+});
+
+$(".modal-toggle-2").on("click", function (e) {
+  e.preventDefault();
+  $(".modal-2").toggleClass("is-visible");
 });
 
 
