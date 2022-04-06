@@ -57,3 +57,4 @@ $('.accordion__header').click(function (e) {
     $(this).next('.accordion__body').addClass('is-active');
   }
 });
+
