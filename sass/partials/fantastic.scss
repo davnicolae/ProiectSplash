@@ -19,3 +19,14 @@
     margin-bottom: 2rem;
   }
 }
+
+/////////////////////////////////
+// pentru 768px ( ca in design)
+.cards{
+  padding: 0 5rem;
+  & >.slick-track{
+display: flex;
+// justify-content: spac;
+  }
+}
+
