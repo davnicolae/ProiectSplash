@@ -8,12 +8,12 @@
     padding: 5rem 0;
     margin: 0;
   }
-  & > .accordion__header:nth-child(2) {
+  & > .accordion-header:nth-child(2) {
     margin-top: 0;
   }
 }
 
-.accordion__header {
+.accordion-header {
   // padding: 1em;
   background-color: $cream;
   border-radius: 10px;
@@ -24,7 +24,7 @@
   cursor: pointer;
   width: 100%;
 }
-.accordion__header > * {
+.accordion-header > * {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 2.4rem;
@@ -33,13 +33,13 @@
     margin-top: 0;
   }
 }
-.accordion__header > h2 {
+.accordion-header > h2 {
   max-width: 110rem;
   padding: 1.5rem 0 1.5rem 2.5rem;
   text-align: left;
 }
 
-.accordion__toggle {
+.accordion-toggle {
   margin-left: 10px;
   height: 4px;
   background-color: #222;
@@ -51,7 +51,7 @@
   right: 3.3rem;
 }
 
-.accordion__toggle::before {
+.accordion-toggle::before {
   content: '';
   width: 4px;
   height: 33px;
@@ -63,11 +63,11 @@
   border-radius: 2px;
 }
 
-.is-active .accordion__toggle::before {
+.is-active .accordion-toggle::before {
   display: none;
 }
 
-.accordion__body {
+.accordion-body {
   max-width: 115rem;
   display: none;
   padding: 2rem;
@@ -81,7 +81,7 @@
     margin-bottom: 1.5rem;
   }
 }
-.accordion__body.is-active {
+.accordion-body.is-active {
   display: block;
 }
 
@@ -99,17 +99,17 @@
     }
   }
 
-  .accordion__body {
+  .accordion-body {
     max-width: 69.3rem;
     margin: auto;
   }
 
-  .accordion__header > * {
+  .accordion-header > * {
     font-size: 2.2rem;
     line-height: 1.25;
   }
 
-  .accordion__header > h2 {
+  .accordion-header > h2 {
     max-width: 63.8rem;
     padding: 1.5rem 0 1.5rem 2.5rem;
   }
