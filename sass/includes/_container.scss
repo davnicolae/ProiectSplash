@@ -1,43 +1,9 @@
-.container {
-  max-width: 1200px;
-}
-
-// nav
-.nav {
+.my-container {
+  max-width: $container;
   margin: 0 auto;
-  padding: 200px 360px;
-  display: flex;
-  justify-content: space-between;
 }
 
-// hero
-// .hero {
-//   background-image: url("/assets/img/header_desktop.webp");
-//   background-size: cover;
-//   height: 100%;
-// }
-// .hero--2 {
-//   background-image: url("/assets/img/back2.webp");
-//   background-size: cover;
-//   height: 100%;
-// }
-.hero-content {
-  padding: 380px 360px;
-  color: #fff;
-  height: 850px;
-}
 
-.first-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #ecf0f1;
-  text-align: center;
-  padding: 50px;
-}
-
-.first-container h2 {
-  color: #27ae60;
-}
 
 .down-container {
   padding: 0 410px;
@@ -47,34 +13,6 @@
   justify-content: center;
 }
 
-.flex {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-direction: row;
-  column-gap: 50px;
-  max-height: 575px;
-}
-
-.flex-reverse {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-direction: row-reverse;
-  max-height: 575px;
-  column-gap: 50px;
-}
-.flex-reverse .first-par {
-  text-align: right;
-}
-
-.first-par {
-  padding: 150px 0;
-  max-width: 575px;
-}
-.first-par h2 {
-  color: #d35400;
-}
 
 .grid figure {
   max-height: 575px;

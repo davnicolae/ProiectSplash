@@ -1,10 +1,3 @@
-.my-container {
-  max-width: $container;
-  margin: 0 auto;
-  & h2 {
-    text-align: center;
-  }
-}
 
 .features-grid {
   display: grid;
@@ -45,18 +38,18 @@
 ////////////////////////////////////
 // laptop si tableta
 @media (max-width: $laptop-max) {
-  .my-container {
-    max-width: 1040px;
-  }
+  // .my-container {
+  //   max-width: 1040px;
+  // }
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: $tablet-max) {
-  .my-container {
-    max-width: 890px;
-  }
+  // .my-container {
+  //   max-width: 890px;
+  // }
 }
 
 /////////////////////////////

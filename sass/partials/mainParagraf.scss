@@ -22,14 +22,10 @@
 
 .flex {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
   flex-direction: row;
   column-gap: 50px;
 
-  & .first-par {
-    text-align: right;
-  }
+
 }
 
 .flex--reverse {
