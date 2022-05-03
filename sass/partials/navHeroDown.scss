@@ -1,6 +1,6 @@
 // nav
 .header {
-  padding: 2rem 36rem;
+  padding: 20px 360px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -11,7 +11,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 480px;
 }
 
 .main-nav-link:link,
@@ -19,9 +19,9 @@
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 18px;
   &.btn--full {
-    width: 12rem;
+    width: 120px;
   }
 }
 
@@ -29,16 +29,16 @@
 
 .nav-open {
   width: 100%;
-  padding: 1rem 36rem;
+  padding: 10px 360px;
   z-index: 999;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
 .sticky {
   background-color: #ecf0f1;
   z-index: 999;
   width: 100%;
-  height: 6rem;
-  padding: 1rem 36rem;
+  height: 60px;
+  padding: 10px 360px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -56,16 +56,16 @@
   display: none;
 }
 .icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
+  height: 48px;
+  width: 48px;
   color: $light-green;
 }
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name='close-outline'] {
   display: none;
 }
 
 .sticky .hero {
-  margin-top: 9.6rem;
+  margin-top: 96px;
 }
 
 // hero
@@ -74,7 +74,7 @@
       rgba(10, 10, 10, 0.52),
       rgba(20, 18, 20, 0.73)
     ),
-    url("/assets/img/header_desktop.webp");
+    url('/assets/img/header_desktop.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -83,7 +83,7 @@
       rgba(10, 10, 10, 0.52),
       rgba(20, 18, 20, 0.73)
     ),
-    url("/assets/img/back2.webp");
+    url('/assets/img/back2.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -92,7 +92,7 @@
       rgba(10, 10, 10, 0.52),
       rgba(20, 18, 20, 0.73)
     ),
-    url("/assets/img/header_desktop.webp");
+    url('/assets/img/header_desktop.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -101,10 +101,10 @@
   color: $green;
 }
 .slick-dots {
-  bottom: 1.5rem;
+  bottom: 15px;
 }
 .slick-dots li button:before {
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #c4c4c4;
   opacity: unset;
   &:hover {
@@ -114,13 +114,12 @@
 
 .hero-content {
   display: flex;
-  max-width: 120rem;
-  height: 85rem;
-  color: #fff;
+  max-width: 1200px;
+  height: 850px;
+  color: $white-text;
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
-  // align-items: center;
 }
 
 // download
@@ -131,7 +130,7 @@
   justify-content: center;
   & div:nth-child(3) {
     display: flex;
-    gap: 2rem;
+    gap: 20px;
   }
 }
 
@@ -139,10 +138,10 @@
 // pc mic
 @media (max-width: $small-pc) {
   .hero-content {
-    max-height: 62rem;
+    max-height: 620px;
   }
   .header {
-    padding: 2rem 10rem;
+    padding: 20px 100px;
   }
 }
 
@@ -150,22 +149,22 @@
 // laptop si tableta
 @media (max-width: $laptop-max) {
   .header {
-    padding: 2rem 8rem;
+    padding: 20px 80px;
   }
 
   .hero-content {
-    max-height: 53rem;
-    padding: 0 8rem;
+    max-height: 530px;
+    padding: 0 80px;
   }
 }
 
 @media (max-width: $tablet-max) {
   .hero-content {
-    max-height: 44rem;
-    padding: 0 5rem;
+    max-height: 440px;
+    padding: 0 50px;
   }
   .header {
-    padding: 2rem 5rem;
+    padding: 20px 50px;
   }
 }
 
@@ -175,10 +174,10 @@
   /* MOBILE NAVIGATION */
   .main-nav-list {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 15px;
     align-items: flex-end;
     & li:nth-last-child(1) {
-      padding-top: 1rem;
+      padding-top: 10px;
     }
   }
 
@@ -202,14 +201,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 28.9rem;
+    height: 289px;
     transform: translateX(100%);
 
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     transition: all 0.5s ease-in;
-    padding: 1.5rem;
+    padding: 15px;
 
     /* Hide navigation */
     /* Allows NO transitions at all */
@@ -223,46 +222,42 @@
 
     /* 3) Hide it from screen readers */
     visibility: hidden;
-
-    // &:last-of-type {
-    //   padding-bottom: 2.5rem;
-    // }
   }
 
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .nav-open .icon-mobile-nav[name='close-outline'] {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
     display: none;
   }
 
   .header {
     max-width: unset;
-    padding: 1.5rem;
+    padding: 15px;
   }
 
   .btn:link,
   .btn:visited {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
 
   .hero-content {
-    max-height: 34rem;
-    padding: 0 1.5rem;
+    max-height: 340px;
+    padding: 0 15px;
   }
 
   .mg-bt-medium {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
   .mg-bt-light {
-    margin-bottom: 1.5rem 0;
+    margin-bottom: 15px 0;
   }
 }
 /////////////////////////////////////
 // pentru 576px
 @media (max-width: $phone-small-max) {
   .hero-content {
-    max-height: 26rem;
+    max-height: 260px;
   }
 }

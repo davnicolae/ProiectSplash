@@ -1,7 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
 body {
   color: $primary-text-color;
   font-family: $primary-font;
@@ -24,82 +20,80 @@ body {
   }
   p {
     font-weight: normal;
-    font-size: 1.6rem;
-    line-height: 2.1rem;
+    font-size: 16px;
+    line-height: 21px;
     letter-spacing: 0.5px;
 
     @media (max-width: $phone-max) {
-      font-size: 1.6rem;
-      margin-bottom: 1.2rem;
+      font-size: 16px;
+      margin-bottom: 12px;
     }
   }
   h1 {
     font-weight: 400;
-    font-size: 4.5rem;
-    margin-bottom: 1rem;
-    line-height: 6.2rem;
+    font-size: 45px;
+    margin-bottom: 10px;
+    line-height: 62px;
     color: $white-text;
     @media (max-width: $phone-max) {
-      font-size: 3.6rem;
-      margin-bottom: 1rem;
-      line-height: 4.9rem;
+      font-size: 36px;
+      margin-bottom: 10px;
+      line-height: 49px;
     }
   }
   h2 {
     font-weight: 400;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    line-height: 4rem;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 40px;
     @media (max-width: $phone-max) {
-      font-size: 2.6rem;
-      margin-bottom: 1.5rem;
+      font-size: 26px;
+      margin-bottom: 15px;
     }
   }
   h3 {
     font-weight: 400;
-    font-size: 2.4rem;
-    margin-bottom: 0.5rem;
+    font-size: 24px;
+    margin-bottom: 5px;
     color: $blue;
-    line-height: 3.2rem;
+    line-height: 32px;
     @media (max-width: $phone-max) {
-      font-size: 2.2rem;
-      margin-bottom: 1.8rem;
+      font-size: 22px;
+      margin-bottom: 18px;
     }
   }
   h4 {
     font-weight: 400;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    line-height: 2.7rem;
+    font-size: 20px;
+    margin-bottom: 5px;
+    line-height: 27px;
     @media (max-width: $phone-max) {
-      font-size: 2rem;
-      margin-bottom: 1.6rem;
+      font-size: 20px;
+      margin-bottom: 16px;
     }
   }
   h5 {
     font-weight: bold;
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
+    font-size: 24px;
+    margin-bottom: 20px;
     @media (max-width: $phone-max) {
-      font-size: 1.8rem;
-      margin-bottom: 1.4rem;
+      font-size: 18px;
+      margin-bottom: 14px;
     }
   }
   h6 {
     font-weight: bold;
-    font-size: 2.2rem;
-    margin-bottom: 1.8rem;
+    font-size: 22px;
+    margin-bottom: 18px;
     @media (max-width: $phone-max) {
-      font-size: 1.6rem;
-      margin-bottom: 1.2rem;
+      font-size: 16px;
+      margin-bottom: 12px;
     }
   }
   ul,
   ol {
     font-weight: normal;
-    font-size: 1.6rem;
-    
-  
+    font-size: 16px;
   }
   ul {
     list-style: disc inside;

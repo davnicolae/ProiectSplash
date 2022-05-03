@@ -10,17 +10,17 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  grid-gap: 3rem;
+  grid-gap: 30px;
 
   & .grid-item:last-child::after {
     position: absolute;
     content: 'new';
     text-transform: uppercase;
     color: #c0392b;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -29,25 +29,24 @@
   flex-direction: column;
   background-color: #d2edff;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 20px;
   justify-content: center;
   text-align: center;
-  line-height: 2.2rem;
-  row-gap: 2rem;
+  line-height: 22px;
+  row-gap: 20px;
   position: relative;
 }
 
 .logos {
   display: flex;
   justify-content: center;
-  // align-items: center;
 }
 
 ////////////////////////////////////
 // laptop si tableta
 @media (max-width: $laptop-max) {
   .my-container {
-    max-width: 104rem;
+    max-width: 1040px;
   }
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -56,7 +55,7 @@
 
 @media (max-width: $tablet-max) {
   .my-container {
-    max-width: 89rem;
+    max-width: 890px;
   }
 }
 
@@ -66,7 +65,7 @@
   .features-grid {
     grid-template-columns: 1fr;
     & p {
-      max-width: 43rem;
+      max-width: 430px;
       text-align: center;
     }
   }

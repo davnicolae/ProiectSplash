@@ -1,29 +1,25 @@
 // colors
-$light-green:#1abc9c;
-$blue:#2980b9;
-$orange:#d35400;
-$green:#27ae60;
-$cream: #F6C3A0;
-$light-cream: #FFD6BA;
-$turquoise:#98E5D6;
-
-
-
-
+$light-green: #1abc9c;
+$blue: #2980b9;
+$orange: #d35400;
+$green: #27ae60;
+$cream: #f6c3a0;
+$light-cream: #ffd6ba;
+$turquoise: #98e5d6;
 
 $primary-color: #000;
 $primary-text-color: #000;
 $secondary-text-color: $orange;
 $tertiary-text-color: $green;
-$white-text:#fff;
+$white-text: #fff;
 // fonts
-$primary-font: "Open Sans", sans-serif;
-$secondary-font: "MyWebFont", sans-serif;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'MyWebFont', sans-serif;
 // sizes
-$container: 120rem;
+$container: 1200px;
 $container-laptop: 1000px;
 $container-tablet: 750px;
-$small-pc:1400px;
+$small-pc: 1400px;
 $laptop-max: 1200px;
 $tablet-max: 992px;
 $phone-max: 768px;

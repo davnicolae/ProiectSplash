@@ -1,11 +1,11 @@
 .accordion-bg {
   background-color: #ecf0f1;
-  padding-bottom: 5rem;
+  padding-bottom: 50px;
 }
 
 .accordion {
   & > h2 {
-    padding: 5rem 0;
+    padding: 50px 0;
     margin: 0;
   }
   & > .accordion-header:nth-child(2) {
@@ -17,7 +17,7 @@
   // padding: 1em;
   background-color: $cream;
   border-radius: 10px;
-  margin-top: 3rem;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,15 +27,15 @@
 .accordion-header > * {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 2.4rem;
+  font-size: 24px;
   line-height: 1.3;
   &:first-of-type {
     margin-top: 0;
   }
 }
 .accordion-header > h2 {
-  max-width: 110rem;
-  padding: 1.5rem 0 1.5rem 2.5rem;
+  max-width: 1100px;
+  padding: 15px 0 15px 25px;
   text-align: left;
 }
 
@@ -48,7 +48,7 @@
   position: relative;
   flex-shrink: 1;
   border-radius: 2px;
-  right: 3.3rem;
+  right: 33px;
 }
 
 .accordion-toggle::before {
@@ -68,17 +68,17 @@
 }
 
 .accordion-body {
-  max-width: 115rem;
+  max-width: 1150px;
   display: none;
-  padding: 2rem;
+  padding: 20px;
   border-top: 0;
   margin: auto;
   background-color: $light-cream;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   & > p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
   }
 }
 .accordion-body.is-active {
@@ -90,27 +90,27 @@
 
 @media (max-width: $phone-max) {
   .accordion-bg {
-    padding-bottom: 3rem;
+    padding-bottom: 30px;
   }
   .accordion {
     & > h2 {
-      padding: 3rem 0;
+      padding: 30px 0;
       margin: 0;
     }
   }
 
   .accordion-body {
-    max-width: 69.3rem;
+    max-width: 693px;
     margin: auto;
   }
 
   .accordion-header > * {
-    font-size: 2.2rem;
+    font-size: 22px;
     line-height: 1.25;
   }
 
   .accordion-header > h2 {
-    max-width: 63.8rem;
-    padding: 1.5rem 0 1.5rem 2.5rem;
+    max-width: 638px;
+    padding: 15px 0 15px 25px;
   }
 }

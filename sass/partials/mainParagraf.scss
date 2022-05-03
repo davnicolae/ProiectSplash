@@ -1,20 +1,20 @@
 .grid {
   display: grid;
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
-  column-gap: 5rem;
+  column-gap: 50px;
 }
 .img {
-  max-height: 57.5rem;
+  max-height: 575px;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
 
 .first-par {
-  padding: 15rem 0;
-  max-width: 57.5rem;
+  padding: 150px 0;
+  max-width: 575px;
   & h2 {
     color: $secondary-text-color;
   }
@@ -22,7 +22,7 @@
 
 .flex {
   display: flex;
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   flex-direction: row;
   column-gap: 50px;
@@ -41,16 +41,16 @@
 
 .seo-section {
   position: relative;
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #ecf0f1;
   text-align: center;
-  padding: 5rem;
+  padding: 50px;
   & h2 {
     color: $tertiary-text-color;
   }
   & p:nth-of-type(2) {
-    margin-top: 1.5rem;
+    margin-top: 15px;
   }
   & .btn--full {
     margin: 0 auto;
@@ -58,36 +58,38 @@
 }
 
 .btn--seo-1 {
-  width: 18.6rem;
+  width: 186px;
 }
 .btn--seo-2 {
-  width: 9.6rem;
+  width: 96px;
 }
 
 ////////////////////////////////////
 // laptop si tableta
 @media (max-width: $laptop-max) {
   .flex {
-    max-width: 104rem;
+    max-width: 1040px;
   }
   .seo-section {
-    max-width: 104rem;
+    max-width: 1040px;
   }
   .first-par {
-    max-width: 50rem;
+    max-width: 500px;
   }
 }
 @media (max-width: $tablet-max) {
-  .flex {
-    max-width: 89rem;
-  }
-  .seo-section {
-    max-width: 89rem;
-  }
-
+  .flex,
+  .seo-section,
   .first-par {
-    max-width: 42rem;
+    max-width: 890px;
   }
+  // .seo-section {
+  //   max-width: 890px;
+  // }
+
+  // .first-par {
+  //   max-width: 420px;
+  // }
 }
 
 ///////////////////////////////
@@ -95,18 +97,18 @@
 @media (max-width: $phone-max) {
   .grid {
     grid-template-columns: 1fr;
-    row-gap: 2rem;
+    row-gap: 20px;
   }
   .flex {
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 20px;
     & .first-par {
       text-align: left;
     }
   }
 
   section {
-    padding: 0 1.5rem;
+    padding: 0 15px;
   }
   .first-par {
     max-width: 100%;
@@ -116,18 +118,18 @@
   }
 
   .seo-section {
-    padding: 2rem;
+    padding: 20px;
   }
   .img {
     max-height: unset;
     align-items: center;
-    max-height: 73.8rem;
+    max-height: 738px;
   }
 
   .btn--seo-1 {
-    width: 17rem;
+    width: 170px;
   }
   .btn--seo-2 {
-    width: 9 rem;
+    width: 90px;
   }
 }

@@ -1,50 +1,49 @@
 .quote {
-  max-width: 80rem;
-  height: 40rem;
+  max-width: 800px;
+  height: 400px;
   margin: 0 auto;
   background-color: $turquoise;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   position: relative;
-  &::after{
+  &::after {
     position: absolute;
     content: url(/assets/img/right-quote-sign\ 3.svg);
-    bottom: -1.5rem;
-    right: -1.5rem;
+    bottom: -15px;
+    right: -15px;
   }
-  &::before{
+  &::before {
     position: absolute;
     content: url(/assets/img/right-quote-sign\ 3.svg);
     transform: rotate(180deg);
-    top: -1.5rem;
-    left: -1.5rem;
+    top: -15px;
+    left: -15px;
   }
 }
 
-.quote-content{
-  padding: 12.3rem 10rem 14rem 10rem;
+.quote-content {
+  padding: 123px 100px 140px 100px;
 }
 
-.quote-text{
-  margin-bottom: 1.5rem;
+.quote-text {
+  margin-bottom: 15px;
 }
-.quote-author{
+.quote-author {
   color: $blue;
 }
 
 /////////////////////////////////
 // pentru 768px ( ca in design)
-
 @media (max-width: $phone-max) {
-  .quote{
-    &::after{
-      bottom: 0.7rem;
-      right: 1rem;
+  .quote {
+    &::after {
+      bottom: 7px;
+      right: 10px;
     }
-    &::before{
+    &::before {
       transform: rotate(180deg);
-      top: .5rem;
-      left: 1rem;
+      top: 5px;
+      left: 10px;
     }
   }
 }

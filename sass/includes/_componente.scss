@@ -2,12 +2,12 @@
 
 %btn-placeholder {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 400;
-  height: 4rem;
+  height: 40px;
   border-radius: 5px;
   text-transform: uppercase;
-  line-height: 2.4rem;
+  line-height: 24px;
   border: none;
   font-family: inherit;
   display: flex;
@@ -17,11 +17,11 @@
 
 // margin bottom reutilizabil
 .mg-bt-medium {
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 }
 
 .mg-bt-light {
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -47,7 +47,7 @@
     &:visited {
       background-color: $blue;
       color: #fff;
-      width: 17rem;
+      width: 170px;
     }
     &:active,
     &:hover {
@@ -60,7 +60,7 @@
   /* The image used */
   background-image: url("/assets/img/parallax.webp");
   // width: 100vh;
-  height: 40rem;
+  height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 // mobile
 @media (max-width: $phone-max) {
   .btn.down-btn:link, .btn.down-btn:visited {
-    width: 15.5rem;
+    width: 155px;
   } 
 }
 
