@@ -5,19 +5,20 @@
   justify-content: space-between;
   position: relative;
   align-items: center;
+  background-color: $light-gray;
 }
 
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 480px;
+  gap: 48px;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  color: #333;
+  color: $gray;
   font-weight: 500;
   font-size: 18px;
   &.btn--full {
@@ -34,7 +35,6 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
 .sticky {
-  background-color: #ecf0f1;
   z-index: 999;
   width: 100%;
   height: 60px;
@@ -68,34 +68,25 @@
   margin-top: 96px;
 }
 
-// hero
 .hero {
+  overflow: hidden;
+  position: relative;
+  // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
   background-image: linear-gradient(
-      rgba(10, 10, 10, 0.52),
-      rgba(20, 18, 20, 0.73)
-    ),
-    url('/assets/img/header_desktop.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
+    rgba(10, 10, 10, 0.52),
+    rgba(20, 18, 20, 0.73)
+  );
+
+  & > img {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
-.hero--2 {
-  background-image: linear-gradient(
-      rgba(10, 10, 10, 0.52),
-      rgba(20, 18, 20, 0.73)
-    ),
-    url('/assets/img/back2.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.hero--3 {
-  background-image: linear-gradient(
-      rgba(10, 10, 10, 0.52),
-      rgba(20, 18, 20, 0.73)
-    ),
-    url('/assets/img/header_desktop.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// hero
+
 
 .slick-dots li.slick-active button:before {
   color: $green;
