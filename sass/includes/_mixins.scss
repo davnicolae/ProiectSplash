@@ -22,3 +22,25 @@
   }
 }
 
+// @mixin media-breakpoint-down($name) {
+//   $max: map-get($grid-breakpoints, $name);
+//   $max: if($max and $max > 0, $max - 0.02, null);
+//   @if $max {
+//     @media (max-width: $max) {
+//       @content;
+//     }
+//   } @else {
+//     @content;
+//   }
+// }
+// @mixin media-breakpoint-up($name) {
+//   $min: map-get($grid-breakpoints, $name);
+//   $min: if($min and $min > 0, $min - 0.02, null);
+//   @if $min {
+//     @media (min-width: $min) {
+//       @content;
+//     }
+//   } @else {
+//     @content;
+//   }
+// }
