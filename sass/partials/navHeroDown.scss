@@ -6,6 +6,19 @@
   position: relative;
   align-items: center;
   background-color: $light-gray;
+  @media (max-width: $small-pc) {
+    padding: 20px 100px;
+  }
+  @media (max-width: $laptop-max) {
+    padding: 20px 80px;
+  }
+  @media (max-width: $tablet-max) {
+    padding: 20px 50px;
+  }
+  @media (max-width: $phone-max) {
+    max-width: unset;
+    padding: 15px;
+  }
 }
 
 .main-nav-list {
@@ -13,6 +26,14 @@
   display: flex;
   align-items: center;
   gap: 48px;
+  @media (max-width: $phone-max) {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+    & li:nth-last-child(1) {
+      padding-top: 10px;
+    }
+  }
 }
 
 .main-nav-link:link,
@@ -33,6 +54,21 @@
   padding: 10px 360px;
   z-index: 999;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  @media (max-width: $phone-max) {
+    & .main-nav {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+    & .icon-mobile-nav[name='close-outline'] {
+      display: block;
+    }
+
+    & .icon-mobile-nav[name='menu-outline'] {
+      display: none;
+    }
+  }
 }
 .sticky {
   z-index: 999;
@@ -54,6 +90,10 @@
   cursor: pointer;
 
   display: none;
+  @media (max-width: $phone-max) {
+    display: block;
+    z-index: 9999;
+  }
 }
 .icon-mobile-nav {
   height: 48px;
@@ -85,7 +125,6 @@
     z-index: -1;
   }
 }
-// hero
 
 .slick-dots li.slick-active button:before {
   color: $green;
@@ -110,6 +149,26 @@
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
+  @media (max-width: $small-pc) {
+    max-height: 620px;
+  }
+  @media (max-width: $laptop-max) {
+    max-height: 530px;
+    padding: 0 80px;
+  }
+  @media (max-width: $tablet-max) {
+    max-height: 440px;
+    padding: 0 50px;
+  }
+  @media (max-width: $phone-max) {
+     max-height: 340px;
+    padding: 0 15px;
+  }
+  @media (max-width: $phone-small-max) {
+  .hero-content {
+    max-height: 260px;
+  }
+}
 }
 
 // download
@@ -130,61 +189,51 @@
 //////////////////////////////////////
 // pc mic
 @media (max-width: $small-pc) {
-  .hero-content {
-    max-height: 620px;
-  }
-  .header {
-    padding: 20px 100px;
-  }
+  // .hero-content {
+  //   max-height: 620px;
+  // }
+  // .header {
+  //   padding: 20px 100px;
+  // }
 }
 
 ////////////////////////////////////
 // laptop si tableta
 @media (max-width: $laptop-max) {
-  .header {
-    padding: 20px 80px;
-  }
+  // .header {
+  //   padding: 20px 80px;
+  // }
 
-  .hero-content {
-    max-height: 530px;
-    padding: 0 80px;
-  }
+  // .hero-content {
+  //   max-height: 530px;
+  //   padding: 0 80px;
+  // }
 }
 
 @media (max-width: $tablet-max) {
-  .hero-content {
-    max-height: 440px;
-    padding: 0 50px;
-  }
-  .header {
-    padding: 20px 50px;
-  }
+  // .hero-content {
+  //   max-height: 440px;
+  //   padding: 0 50px;
+  // }
+  // .header {
+  //   padding: 20px 50px;
+  // }
 }
 
 /////////////////////////////////
 // pentru 768px ( ca in design)
 @media (max-width: $phone-max) {
-  /* MOBILE NAVIGATION */
-  .main-nav-list {
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-end;
-    & li:nth-last-child(1) {
-      padding-top: 10px;
-    }
-  }
+  // .btn-mobile-nav {
+  //   display: block;
+  //   z-index: 9999;
+  // }
 
-  .btn-mobile-nav {
-    display: block;
-    z-index: 9999;
-  }
-
-  .nav-open .main-nav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0);
-  }
+  // .nav-open .main-nav {
+  //   opacity: 1;
+  //   pointer-events: auto;
+  //   visibility: visible;
+  //   transform: translateX(0);
+  // }
 
   .main-nav {
     background-color: rgba(255, 255, 255, 0.9);
@@ -217,18 +266,18 @@
     visibility: hidden;
   }
 
-  .nav-open .icon-mobile-nav[name='close-outline'] {
-    display: block;
-  }
+  // .nav-open .icon-mobile-nav[name='close-outline'] {
+  //   display: block;
+  // }
 
-  .nav-open .icon-mobile-nav[name='menu-outline'] {
-    display: none;
-  }
+  // .nav-open .icon-mobile-nav[name='menu-outline'] {
+  //   display: none;
+  // }
 
-  .header {
-    max-width: unset;
-    padding: 15px;
-  }
+  // .header {
+  //   max-width: unset;
+  //   padding: 15px;
+  // }
 
   .btn:link,
   .btn:visited {
@@ -249,8 +298,8 @@
 }
 /////////////////////////////////////
 // pentru 576px
-@media (max-width: $phone-small-max) {
-  .hero-content {
-    max-height: 260px;
-  }
-}
+// @media (max-width: $phone-small-max) {
+//   .hero-content {
+//     max-height: 260px;
+//   }
+// }

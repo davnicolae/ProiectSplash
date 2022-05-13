@@ -4,9 +4,10 @@ textarea,
 button {
   @include animated();
 }
-.container {
+.my-container {
   max-width: $container;
   margin: 0 auto;
+
 
   @media (max-width: $laptop-max) {
     max-width: $container-laptop;
